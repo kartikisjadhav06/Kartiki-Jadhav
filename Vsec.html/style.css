@@ -1,0 +1,134 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f2f2f2;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+header{
+background:#6429ad;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#333;
+padding:10px;
+text-align:center;S
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.container{
+text-align:center;
+padding:50px;
+width:95%
+max-width:900px;
+display:flex
+overflow:hidden;
+}
+
+button{
+background:#0077cc;
+color:white;
+border:none;
+padding:10px 20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005fa3;
+}
+
+.login-box{
+width:300px;
+margin:80px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+.login-box input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+input[type="submit"]{
+background:#0077cc;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+input[type="submit"]:hover{
+background:#005fa3;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:0;
+width:100%;
+}
+const InputField = ({placeholder}) =>
+    className="input-atom" placeholder= {placeholder} />
+
+    const Button = ({label}) =>
+        className="btn-atom">{label};
+
+
+        const SearchMolecule = () => {
+
+            return (
+
+                className="search-molecule">
+                    Find Records
+
+         
+const Button = ({
+        variant = 'primary',
+        size = 'medium'.
+        state = 'default',
+        children
+}) => {
+        const classNames = 'btn btn-${variant}
+        btn-${size} state-${state}';
+
+        return (
+                classNames={classNames} disabled={state==='disabled'}>
+                    {children}
+
+        );
+
+            )
+}
+
+
+.right-panel {
+    width:50%;
+    background:#667eea;
+    align-items:center;
+    padding:40px;
+    text-align:center;
+}
+media(min-width:768px){
+    .dashboard-container{
+        flex-direction:row
+    }
+}
