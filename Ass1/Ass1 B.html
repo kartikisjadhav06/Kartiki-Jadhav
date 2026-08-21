@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Four Box 180 Degree Rotation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 60px;
+        }
+
+        /* Main container */
+        .container {
+            position: relative;
+            width: 600px;
+            height: 300px;
+        }
+
+        /* Common box style */
+        .box {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+
+            border: 2px solid black;
+            border-radius: 10px;
+
+            transition: all 1s ease;
+        }
+
+        /* Starting position - all boxes connected */
+
+        .box1 {
+            background: green;
+            top: 50px;
+            left: 200px;
+        }
+
+        .box2 {
+            background: red;
+            top: 50px;
+            left: 290px;
+        }
+
+        .box3 {
+            background: blue;
+            top: 140px;
+            left: 200px;
+        }
+
+        .box4 {
+            background: yellow;
+            color: black;
+            top: 140px;
+            left: 290px;
+        }
+
+        /* Move left boxes + rotate 180 degrees */
+
+        .container:hover .box1 {
+            transform: translateX(-170px) rotate(360deg);
+        }
+
+        .container:hover .box3 {
+            transform: translateX(-170px) rotate(360deg);
+        }
+
+        /* Move right boxes + rotate 180 degrees */
+
+        .container:hover .box2 {
+            transform: translateX(170px) rotate(360deg);
+        }
+
+        .container:hover .box4 {
+            transform: translateX(170px) rotate(360deg);
+        }
+
+        /* Center message */
+
+        .message {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+
+            opacity: 0;
+
+            transition: opacity 0.3s ease 1s;
+
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Show message after rotation */
+
+        .container:hover .message {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Four Box 180 Degree Rotation</h1>
+
+    <div class="container">
+
+        <div class="box box1"></div>
+
+        <div class="box box2"></div>
+
+        <div class="box box3"></div>
+
+        <div class="box box4"></div>
+
+        <div class="message">
+            HELLO KARTIKI
+        </div>
+
+    </div>
+
+</body>
+</html>
+
