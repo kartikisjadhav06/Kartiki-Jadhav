@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.form-box {
+  width: 450px;
+  max-width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.form-box h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-box form > button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.form-box form > button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #777 !important;
+  color: white;
+}
+
+
+/* STUDENT TABLE */
+
+.students-box {
+  margin-top: 40px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.display-button:hover {
+  background-color: #218838;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: black;
+  margin: 3px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  margin: 3px;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.no-data {
+  text-align: center;
+  color: gray;
+  padding: 20px;
+}
