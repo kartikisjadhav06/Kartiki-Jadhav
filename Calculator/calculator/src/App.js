@@ -47,8 +47,8 @@ function App() {
       <div>
         <button onClick={add}>+</button>
         <button onClick={subtract}>-</button>
-        <button onClick={multiply}>×</button>
-        <button onClick={divide}>÷</button>
+        <button onClick={multiply}>*</button>
+        <button onClick={divide}>/</button>
       </div>
 
       <h2>Result: {result}</h2>
